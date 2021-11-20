@@ -27,23 +27,23 @@ $EndComp
 $Comp
 L Device:C_Small C1
 U 1 1 616F543B
-P 4650 2375
-F 0 "C1" H 4742 2421 50  0000 L CNN
-F 1 "C_Small" H 4742 2330 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4650 2375 50  0001 C CNN
-F 3 "~" H 4650 2375 50  0001 C CNN
-	1    4650 2375
+P 4725 2025
+F 0 "C1" H 4817 2071 50  0000 L CNN
+F 1 "C_Small" H 4817 1980 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4725 2025 50  0001 C CNN
+F 3 "~" H 4725 2025 50  0001 C CNN
+	1    4725 2025
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C2
 U 1 1 616F58A4
-P 4325 2375
-F 0 "C2" H 4417 2421 50  0000 L CNN
-F 1 "C_Small" H 4417 2330 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4325 2375 50  0001 C CNN
-F 3 "~" H 4325 2375 50  0001 C CNN
-	1    4325 2375
+P 4400 2025
+F 0 "C2" H 4492 2071 50  0000 L CNN
+F 1 "C_Small" H 4492 1980 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4400 2025 50  0001 C CNN
+F 3 "~" H 4400 2025 50  0001 C CNN
+	1    4400 2025
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -204,11 +204,11 @@ Text GLabel 7700 4500 0    50   Input ~ 0
 Blue_neg
 Wire Wire Line
 	7700 4500 7700 4750
-Text GLabel 5675 3475 2    50   Input ~ 0
+Text GLabel 3975 3650 0    50   Input ~ 0
 Red_PWM
-Text GLabel 5675 3575 2    50   Input ~ 0
+Text GLabel 5175 3850 2    50   Input ~ 0
 Green_PWM
-Text GLabel 5675 3675 2    50   Input ~ 0
+Text GLabel 5175 3750 2    50   Input ~ 0
 Blue_PWM
 $Comp
 L Connector:TestPoint TP1
@@ -262,17 +262,117 @@ F 3 "~" H 9675 4325 50  0001 C CNN
 $EndComp
 Text GLabel 9475 4325 0    50   Input ~ 0
 WS2812b
-Text GLabel 5675 3875 2    50   Input ~ 0
+Text GLabel 5175 3650 2    50   Input ~ 0
 WS2812b
 $Comp
 L MCU_Microchip_ATtiny:ATtiny814-SS U1
 U 1 1 6179E4AD
 P 4575 3750
-F 0 "U1" H 4575 4631 50  0000 C CNN
-F 1 "ATtiny814-SS" H 4575 4540 50  0000 C CNN
+F 0 "U1" H 4800 4500 50  0000 C CNN
+F 1 "ATtiny814-SS" H 5000 4400 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4575 3750 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/40001912A.pdf" H 4575 3750 50  0001 C CNN
 	1    4575 3750
 	1    0    0    -1  
 $EndComp
+Text GLabel 5175 3550 2    50   Input ~ 0
+RX
+Text GLabel 5175 3450 2    50   Input ~ 0
+TX
+Text GLabel 9300 2500 0    50   Input ~ 0
+RX
+Text GLabel 9300 2400 0    50   Input ~ 0
+TX
+Text GLabel 5175 3350 2    50   Input ~ 0
+UDPI
+Text GLabel 9300 2100 0    50   Input ~ 0
+UDPI
+$Comp
+L power:GND #PWR0104
+U 1 1 617577FD
+P 8775 2300
+F 0 "#PWR0104" H 8775 2050 50  0001 C CNN
+F 1 "GND" H 8780 2127 50  0000 C CNN
+F 2 "" H 8775 2300 50  0001 C CNN
+F 3 "" H 8775 2300 50  0001 C CNN
+	1    8775 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8775 2300 9300 2300
+$Comp
+L power:VCC #PWR0105
+U 1 1 61758559
+P 8775 2200
+F 0 "#PWR0105" H 8775 2050 50  0001 C CNN
+F 1 "VCC" H 8790 2373 50  0000 C CNN
+F 2 "" H 8775 2200 50  0001 C CNN
+F 3 "" H 8775 2200 50  0001 C CNN
+	1    8775 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8775 2200 9300 2200
+$Comp
+L power:VCC #PWR0106
+U 1 1 6175914C
+P 4575 3050
+F 0 "#PWR0106" H 4575 2900 50  0001 C CNN
+F 1 "VCC" H 4590 3223 50  0000 C CNN
+F 2 "" H 4575 3050 50  0001 C CNN
+F 3 "" H 4575 3050 50  0001 C CNN
+	1    4575 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0107
+U 1 1 6175A657
+P 4575 1700
+F 0 "#PWR0107" H 4575 1550 50  0001 C CNN
+F 1 "VCC" H 4590 1873 50  0000 C CNN
+F 2 "" H 4575 1700 50  0001 C CNN
+F 3 "" H 4575 1700 50  0001 C CNN
+	1    4575 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 6175AB45
+P 4575 4450
+F 0 "#PWR0108" H 4575 4200 50  0001 C CNN
+F 1 "GND" H 4580 4277 50  0000 C CNN
+F 2 "" H 4575 4450 50  0001 C CNN
+F 3 "" H 4575 4450 50  0001 C CNN
+	1    4575 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 6175B11F
+P 4575 2250
+F 0 "#PWR0109" H 4575 2000 50  0001 C CNN
+F 1 "GND" H 4580 2077 50  0000 C CNN
+F 2 "" H 4575 2250 50  0001 C CNN
+F 3 "" H 4575 2250 50  0001 C CNN
+	1    4575 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2125 4400 2250
+Wire Wire Line
+	4400 2250 4575 2250
+Wire Wire Line
+	4575 2250 4725 2250
+Wire Wire Line
+	4725 2250 4725 2125
+Connection ~ 4575 2250
+Wire Wire Line
+	4725 1925 4725 1700
+Wire Wire Line
+	4725 1700 4575 1700
+Wire Wire Line
+	4575 1700 4400 1700
+Wire Wire Line
+	4400 1700 4400 1925
+Connection ~ 4575 1700
 $EndSCHEMATC
