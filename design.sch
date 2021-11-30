@@ -177,11 +177,11 @@ Wire Wire Line
 Wire Wire Line
 	7125 2675 7675 2675
 Connection ~ 7675 2675
-Text GLabel 6675 2475 0    50   Input ~ 0
+Text GLabel 7000 2475 0    50   Input ~ 0
 Red_PWM
-Text GLabel 6700 3675 0    50   Input ~ 0
+Text GLabel 7025 3675 0    50   Input ~ 0
 Green_PWM
-Text GLabel 6675 4950 0    50   Input ~ 0
+Text GLabel 7000 4950 0    50   Input ~ 0
 Blue_PWM
 Wire Wire Line
 	7000 2475 7125 2475
@@ -375,138 +375,4 @@ Wire Wire Line
 Wire Wire Line
 	4400 1700 4400 1925
 Connection ~ 4575 1700
-$Comp
-L Device:R_Small R?
-U 1 1 61A6A719
-P 6900 2475
-F 0 "R?" H 6959 2521 50  0000 L CNN
-F 1 "R_Small" H 6959 2430 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 6900 2475 50  0001 C CNN
-F 3 "~" H 6900 2475 50  0001 C CNN
-	1    6900 2475
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6675 2475 6800 2475
-$Comp
-L Device:R_Small R?
-U 1 1 61A6CC22
-P 6925 3675
-F 0 "R?" H 6984 3721 50  0000 L CNN
-F 1 "R_Small" H 6984 3630 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 6925 3675 50  0001 C CNN
-F 3 "~" H 6925 3675 50  0001 C CNN
-	1    6925 3675
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6700 3675 6825 3675
-$Comp
-L Device:R_Small R?
-U 1 1 61A6D9D6
-P 6900 4950
-F 0 "R?" H 6959 4996 50  0000 L CNN
-F 1 "R_Small" H 6959 4905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 6900 4950 50  0001 C CNN
-F 3 "~" H 6900 4950 50  0001 C CNN
-	1    6900 4950
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6675 4950 6800 4950
-NoConn ~ 2700 3075
-NoConn ~ 2700 3175
-NoConn ~ 2700 3275
-NoConn ~ 2700 3375
-NoConn ~ 2700 3575
-NoConn ~ 2700 3675
-NoConn ~ 2700 3875
-NoConn ~ 2700 3975
-NoConn ~ 2700 4175
-NoConn ~ 2700 4275
-NoConn ~ 2700 4475
-NoConn ~ 2700 4575
-NoConn ~ 2700 4775
-NoConn ~ 2700 4875
-$Comp
-L power:GND #PWR?
-U 1 1 61A7334E
-P 1925 5375
-F 0 "#PWR?" H 1925 5125 50  0001 C CNN
-F 1 "GND" H 1930 5202 50  0000 C CNN
-F 2 "" H 1925 5375 50  0001 C CNN
-F 3 "" H 1925 5375 50  0001 C CNN
-	1    1925 5375
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1925 5375 1800 5375
-Wire Wire Line
-	1800 5375 1800 5175
-Wire Wire Line
-	1925 5375 2100 5375
-Wire Wire Line
-	2100 5375 2100 5175
-Connection ~ 1925 5375
-$Comp
-L power:VCC #PWR?
-U 1 1 61A74E6E
-P 2975 2575
-F 0 "#PWR?" H 2975 2425 50  0001 C CNN
-F 1 "VCC" H 2990 2748 50  0000 C CNN
-F 2 "" H 2975 2575 50  0001 C CNN
-F 3 "" H 2975 2575 50  0001 C CNN
-	1    2975 2575
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2975 2575 2700 2575
-$Comp
-L Device:R_Small R?
-U 1 1 61A75EA7
-P 3175 2775
-F 0 "R?" H 3234 2821 50  0000 L CNN
-F 1 "5.1k" H 3234 2730 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 3175 2775 50  0001 C CNN
-F 3 "~" H 3175 2775 50  0001 C CNN
-	1    3175 2775
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3075 2775 2700 2775
-Wire Wire Line
-	2700 2875 3075 2875
-$Comp
-L Device:R_Small R?
-U 1 1 61A77F57
-P 3175 2875
-F 0 "R?" H 3000 2925 50  0000 L CNN
-F 1 "5.1k" H 2950 2825 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 3175 2875 50  0001 C CNN
-F 3 "~" H 3175 2875 50  0001 C CNN
-	1    3175 2875
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 61A78369
-P 3525 2825
-F 0 "#PWR?" H 3525 2575 50  0001 C CNN
-F 1 "GND" H 3530 2652 50  0000 C CNN
-F 2 "" H 3525 2825 50  0001 C CNN
-F 3 "" H 3525 2825 50  0001 C CNN
-	1    3525 2825
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3275 2875 3375 2875
-Wire Wire Line
-	3375 2875 3375 2825
-Wire Wire Line
-	3375 2825 3525 2825
-Wire Wire Line
-	3375 2825 3375 2775
-Wire Wire Line
-	3375 2775 3275 2775
-Connection ~ 3375 2825
 $EndSCHEMATC
