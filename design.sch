@@ -509,4 +509,17 @@ Wire Wire Line
 Wire Wire Line
 	3375 2775 3275 2775
 Connection ~ 3375 2825
+$Comp
+L Connector:TestPoint TP?
+U 1 1 61A9098E
+P 9475 4675
+F 0 "TP?" V 9429 4863 50  0000 L CNN
+F 1 "TestPoint" V 9520 4863 50  0000 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm" H 9675 4675 50  0001 C CNN
+F 3 "~" H 9675 4675 50  0001 C CNN
+	1    9475 4675
+	0    1    1    0   
+$EndComp
+Text GLabel 9475 4675 0    50   Input ~ 0
++5V
 $EndSCHEMATC
