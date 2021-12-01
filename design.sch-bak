@@ -510,10 +510,10 @@ Wire Wire Line
 	3375 2775 3275 2775
 Connection ~ 3375 2825
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP5
 U 1 1 61A9098E
 P 9475 4675
-F 0 "TP?" V 9429 4863 50  0000 L CNN
+F 0 "TP5" V 9429 4863 50  0000 L CNN
 F 1 "TestPoint" V 9520 4863 50  0000 L CNN
 F 2 "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm" H 9675 4675 50  0001 C CNN
 F 3 "~" H 9675 4675 50  0001 C CNN

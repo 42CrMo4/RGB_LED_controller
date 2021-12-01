@@ -520,6 +520,17 @@ F 3 "~" H 9675 4675 50  0001 C CNN
 	1    9475 4675
 	0    1    1    0   
 $EndComp
-Text GLabel 9475 4675 0    50   Input ~ 0
-+5V
+$Comp
+L power:VCC #PWR?
+U 1 1 61AAD6C9
+P 8950 4675
+F 0 "#PWR?" H 8950 4525 50  0001 C CNN
+F 1 "VCC" H 8965 4848 50  0000 C CNN
+F 2 "" H 8950 4675 50  0001 C CNN
+F 3 "" H 8950 4675 50  0001 C CNN
+	1    8950 4675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 4675 9475 4675
 $EndSCHEMATC
