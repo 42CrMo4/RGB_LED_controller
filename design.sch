@@ -204,7 +204,7 @@ Text GLabel 7700 4500 0    50   Input ~ 0
 Blue_neg
 Wire Wire Line
 	7700 4500 7700 4750
-Text GLabel 3975 3650 0    50   Input ~ 0
+Text GLabel 3975 3550 0    50   Input ~ 0
 Red_PWM
 Text GLabel 5175 3850 2    50   Input ~ 0
 Green_PWM
