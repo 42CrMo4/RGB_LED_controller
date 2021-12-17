@@ -1,12 +1,12 @@
 int led_blue = PIN_PA4;           // the PWM pin the LED is attached to
 int led_green = PIN_PA5;           // the PWM pin the LED is attached to
-int led_red = PIN_PB3;           // the PWM pin the LED is attached to
-int brightness_blue = 0;    // how bright the LED is
-int brightness_green = 0;    // how bright the LED is
+int led_red = PIN_PB2;           // the PWM pin the LED is attached to
+int brightness_blue = 240;    // how bright the LED is
+int brightness_green = 120;    // how bright the LED is
 int brightness_red = 0;    // how bright the LED is
 int fadeAmount_blue = 5;    // how many points to fade the LED by
 int fadeAmount_green = 7;    // how many points to fade the LED by
-int fadeAmount_red = 5;    // how many points to fade the LED by
+int fadeAmount_red = 6;    // how many points to fade the LED by
 
 // the setup routine runs once when you press reset:
 void setup() {
