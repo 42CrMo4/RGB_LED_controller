@@ -4,9 +4,9 @@ int led_red = PIN_PB2;           // the PWM pin the LED is attached to
 int brightness_blue = 240;    // how bright the LED is
 int brightness_green = 120;    // how bright the LED is
 int brightness_red = 0;    // how bright the LED is
-int fadeAmount_blue = 5;    // how many points to fade the LED by
-int fadeAmount_green = 7;    // how many points to fade the LED by
-int fadeAmount_red = 6;    // how many points to fade the LED by
+int fadeAmount_blue = 1;    // how many points to fade the LED by
+int fadeAmount_green = 1;    // how many points to fade the LED by
+int fadeAmount_red = 1;    // how many points to fade the LED by
 
 // the setup routine runs once when you press reset:
 void setup() {
@@ -39,5 +39,5 @@ void loop() {
     fadeAmount_red = -fadeAmount_red;
   }
   // wait for 30 milliseconds to see the dimming effect
-  delay(90);
+  delay(25);
 }
